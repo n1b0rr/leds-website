@@ -6,25 +6,6 @@
     --purple: #8979F2;
 }
 
-
-
-.side-nav{
-    position: fixed;
-    display: block;
-    float: left;
-    top: 40%;
-    left: 2%;
-
-    text-align: center;
-}
-
-
-.side-nav>p{
-    padding: 15px;
-    font-weight: 400;
-    font-size: 25px;
-}   
-
 /*/ styling of the header section /*/
 
 header{
@@ -33,6 +14,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 header img{
     width: 30%;
@@ -40,35 +22,15 @@ header img{
 
     
 }
-#quote{
 
-    margin-top: 20px;
-    width: 400px;
-    font-size: 32px;
-    font-style: italic;
-    text-align: justify;
-    float: left;
-    font-family: 'Roboto Slab', serif;
-    flex-shrink: 1;
 
-}
-#embedded{
-    display: block;
-    position: relative;
-    float: left;
-    margin-top: 10%;
-    flex-shrink: 1;
-}
-/*/ the right section of the main page /*/
+/*/ the left section of the main page /*/
 #profile{
-    display: block;
     position: relative;
     text-align: right;
-    float: right;
     width: 725px;
     margin-top: 10%;
     flex-basis: 0;
-    flex-shrink: 1;
 }
 #profile p{
     text-align: left;
@@ -80,16 +42,32 @@ header img{
     font-weight: 800;
 }
 
-#info{
-    float: right;
-    width: 283px;
-}
-
 #about{
-    display: block;
 
     height: 100vh;
     width: 100%;
+}
+
+/*/ the right section of the header /*/
+
+#embedded{
+
+    position: relative;
+    margin-top: 10%;
+}
+#embedded h3{
+    font-weight: 700;
+}
+#quote{
+
+    margin-top: 20px;
+    width: 400px;
+    font-size: 32px;
+    font-style: italic;
+    text-align: justify;
+    float: left;
+    font-family: 'Roboto Slab', serif;
+
 
 }
 
