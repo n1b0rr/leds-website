@@ -10,11 +10,11 @@
 
 header{
     position: relative;
-    top: 10vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 100vh;
+    padding-top: 10vh;
 }
 header img{
     height: 80%;
@@ -68,9 +68,15 @@ header::after{
 /*/ the other sections /*/
 
 #more{
+    position: relative;
     display: block;
     margin-left: 10%;
     width: 80%;
 }
+@media only screen and (max-width: 1190px) {
+    #more {
+      padding-top: 22em;
+    }
+  }
 
 
