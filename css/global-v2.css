@@ -73,8 +73,7 @@ li{
 /*/ styling of top navigation bar /*/
 
 .topbar{
-    display: flex;
-    justify-content: center;
+    display: block;
     position: fixed;
     width: 100%;
     background-color: var(--black);
@@ -85,7 +84,7 @@ li{
 .topbar a{
     color: var(--green-light);
 }
-.topbar>ul li{
+.topbar ul li{
 
     float: left;
     width: 200px;
@@ -104,6 +103,15 @@ li{
     display: block;
     background-color: var(--black);
     z-index: -1;
+}
+
+#logo {
+    width: 50px;
+    float: left;
+    padding: 5px;
+}
+.topbar ul{
+    margin-left: 100px;
 }
 
 
