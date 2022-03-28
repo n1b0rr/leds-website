@@ -64,7 +64,7 @@ li{
     justify-content: center;
     position: fixed;
     width: 100%;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-text-color);
     height: 60px;
     top: 0;
     z-index: 1;
@@ -142,4 +142,26 @@ html{
     box-shadow: -4px 4px 0px var(--main-midtone);
     align-items: stretch;
 }
+
+
+/*/ style for scroll bar /*/
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--main-bg-color); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--alternate-highlight-color); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-text-color); 
+  }
 

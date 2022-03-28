@@ -1,0 +1,108 @@
+:root{
+    --black: #0D0D0D;
+    --white: #F2F2F2;
+    --green-dark: #27F27F;
+    --green-light: #27F27F;
+    --purple: #8979F2;
+}
+
+
+
+.side-nav{
+    position: fixed;
+    display: block;
+    float: left;
+    top: 40%;
+    left: 2%;
+
+    text-align: center;
+}
+
+
+.side-nav>p{
+    padding: 15px;
+    font-weight: 400;
+    font-size: 25px;
+}   
+
+/*/ styling of the header section /*/
+
+header{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+header img{
+    width: 30%;
+    min-width: 400px;
+
+    
+}
+#quote{
+
+    margin-top: 20px;
+    width: 400px;
+    font-size: 32px;
+    font-style: italic;
+    text-align: justify;
+    float: left;
+    font-family: 'Roboto Slab', serif;
+    flex-shrink: 1;
+
+}
+#embedded{
+    display: block;
+    position: relative;
+    float: left;
+    margin-top: 10%;
+    flex-shrink: 1;
+}
+/*/ the right section of the main page /*/
+#profile{
+    display: block;
+    position: relative;
+    text-align: right;
+    float: right;
+    width: 725px;
+    margin-top: 10%;
+    flex-basis: 0;
+    flex-shrink: 1;
+}
+#profile p{
+    text-align: left;
+    margin: 10px;
+    margin-top: 20px;
+}
+#profile h3{
+    color: var(--purple);
+    font-weight: 800;
+}
+
+#info{
+    float: right;
+    width: 283px;
+}
+
+#about{
+    display: block;
+
+    height: 100vh;
+    width: 100%;
+
+}
+
+/*/ the other sections /*/
+
+#more{
+    position: relative;
+    margin-left: 10%;
+    width: 80%;
+}
+#more-title{
+    position: relative;
+}
+
+
+

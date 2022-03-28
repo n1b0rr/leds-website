@@ -1,0 +1,165 @@
+
+:root{
+    --black: #0D0D0D;
+    --white: #F2F2F2;
+    --green-dark: #27F27F;
+    --green-light: #27F27F;
+    --purple: #8979F2;
+}
+
+/*/ Main styling /*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 144px;
+    
+}
+
+h2{
+    font-weight: 600;
+    font-size: 72px;
+    color: var(--purple);
+}
+
+h3{
+    font-weight: 400;
+    font-size: 48px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.ultra-bold{
+    padding: 5px;
+    width: fit-content;
+    font-weight: 700;
+    color: var(--green-light);
+    background-color: var(--black);
+
+}
+a{
+    color: var(--purple);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px;
+
+}
+a:hover{
+    background-color: var(--purple);
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+li{
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+
+/*/ styling of top navigation bar /*/
+
+.topbar{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: var(--black);
+    height: 60px;
+    z-index: 1;
+
+}
+.topbar a{
+    color: var(--green-light);
+}
+.topbar>ul li{
+
+    float: left;
+    width: 200px;
+}
+
+/*/ extended lists /*/
+.topbar ul li ul{
+
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+.topbar ul li:hover ul, li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    background-color: var(--black);
+    z-index: -1;
+}
+
+
+
+/*/ styling for cards /*/
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card > h3{
+    font-weight: 600;
+    font-size: 24px;
+    padding: 28px;
+    padding-left: 0px;
+
+}
+
+.card p{
+    text-align: justify;
+}
+
+.card{
+    padding: 25px;
+    border: 2px solid black;
+    flex-basis: 330px;
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-bottom: 10;
+    margin-left: 0px;
+    border-radius: 20px;
+    box-shadow: -4px 4px 0px var(--green-dark);
+    align-items: stretch;
+}
+
+
+/*/ style for scroll bar /*/
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--white); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--purple); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--black); 
+  }
+
