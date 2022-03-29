@@ -69,6 +69,10 @@ li{
     font-size: 32px;
 }
 
+.green{
+    color: var(--green-light);
+}
+
 
 /*/ styling of top navigation bar /*/
 
@@ -76,7 +80,7 @@ li{
     display: block;
     position: fixed;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--black);
     height: 60px;
     z-index: 1;
 
@@ -103,7 +107,7 @@ li{
     display: block;
     float: left;
 
-    background-color: var(--white);
+    background-color: var(--black);
     z-index: -1;
 
     margin: 0;
