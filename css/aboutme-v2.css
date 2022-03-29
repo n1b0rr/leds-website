@@ -13,13 +13,13 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     height: 100vh;
     padding-top: 10vh;
 }
 header img{
     height: 80%;
     min-height: 400px;
-    align-self: center;
 }
 header::after{
     display: block;
@@ -33,7 +33,6 @@ header::after{
 #profile{
     text-align: right;
     width: 725px;
-    margin-top: 10%;
     flex-basis: 0;
 }
 #profile p{
@@ -48,7 +47,6 @@ header::after{
 /*/ the right section of the header /*/
 
 #embedded{
-    margin-top: 10%;
     flex-basis: 1;
 }
 #embedded h3{
@@ -71,10 +69,13 @@ header::after{
     display: block;
     margin-left: 10%;
     width: 80%;
+    height: 100vh;
+    padding-top: 5em;
 }
+
 @media only screen and (max-width: 1190px) {
     #more {
-      padding-top: 22em;
+      padding-top: 13em;
     }
   }
 
