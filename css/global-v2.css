@@ -10,6 +10,8 @@
 /*/ Main styling text/*/
 html{
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -36,7 +38,7 @@ h3{
 }
 
 p{
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 500;
     line-height: 1.6;
 }
@@ -72,7 +74,6 @@ li{
 .green{
     color: var(--green-light);
 }
-
 
 /*/ styling of top navigation bar /*/
 
@@ -120,9 +121,9 @@ li{
 
 
 #logo {
-    width: 50px;
+    width: 45px;
     float: left;
-    padding: 5px;
+    padding: 7px;
 }
 
 /*/ styling for cards /*/
@@ -148,7 +149,7 @@ li{
 .card{
     padding: 25px;
     border: 2px solid black;
-    flex-basis: 330px;
+    flex-basis: 400px;
     margin-top: 25px;
     margin-right: 50px;
     margin-bottom: 10;
@@ -179,4 +180,18 @@ li{
   ::-webkit-scrollbar-thumb:hover {
     background: var(--black); 
   }
+
+
+
+
+footer{
+
+    padding: 2vw;
+    background-color: var(--black);
+    color: var(--green-light);
+}
+#footer-content{
+    margin-left: 6vw;
+}
+  
 

@@ -8,7 +8,7 @@
 
 /*/ styling of the header section /*/
 
-header{
+#aboutme{
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -17,11 +17,11 @@ header{
     height: 100vh;
     padding-top: 10vh;
 }
-header img{
+#aboutme img{
     height: 80%;
     min-height: 400px;
 }
-header::after{
+#aboutme::after{
     display: block;
     content: "";
     clear: both;
@@ -71,6 +71,10 @@ header::after{
     width: 80%;
     height: 100vh;
     padding-top: 5em;
+}
+
+#more h2{
+    text-align: center;
 }
 
 @media only screen and (max-width: 1190px) {

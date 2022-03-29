@@ -1,0 +1,42 @@
+:root{
+    --black: #0D0D0D;
+    --white: #F2F2F2;
+    --green-dark: #27F27F;
+    --green-light: #27F27F;
+    --purple: #8979F2;
+}
+
+
+#top{
+    padding-top: 10vh;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+#content img{
+    width: 42vw;
+}
+
+#content div{
+    width: 37vw;
+    text-align: justify;
+    margin-top: 2vw;
+    padding: 1vw;
+}
+#content div h3{
+    padding-left: 1vw;
+}
+#content div p{
+    padding: 1vw;
+}
