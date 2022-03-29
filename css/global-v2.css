@@ -76,13 +76,16 @@ li{
     display: block;
     position: fixed;
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--white);
     height: 60px;
     z-index: 1;
 
 }
 .topbar a{
     color: var(--green-light);
+}
+.topbar ul{
+    margin-left: 5em;
 }
 .topbar ul li{
 
@@ -100,8 +103,10 @@ li{
     display: block;
     float: left;
 
-    background-color: var(--black);
+    background-color: var(--white);
     z-index: -1;
+
+    margin: 0;
 }
 .topbar ul li:hover ul li{
    
