@@ -69,7 +69,8 @@
     display: block;
     margin-left: 10%;
     width: 80%;
-    height: 100vh;
+    height: fit-content;
+    margin-bottom: 5vw;
     padding-top: 5em;
 }
 
@@ -83,4 +84,8 @@
     }
   }
 
+
+#skills{
+    flex-basis: 900px;
+}
 
