@@ -163,9 +163,9 @@ li{
     align-items: stretch;
 }
 
-/* still working on these sliders */
-/*
 label{
+    display: inline-block;
+    width: 40px;
     font-size: 26px;
     font-weight: 700;
 }
@@ -174,7 +174,7 @@ label{
 .fake-slider {
     position: relative;
     margin-top: 4em;
-    margin-right: 4em;
+    margin-left: 4em;
     -webkit-appearance: none;
     appearance: none;
     width: 80%;
@@ -196,7 +196,6 @@ label{
     cursor: pointer;
     border-radius: 15px;
   }
-*/
 
 
 /*/ style for scroll bar /*/
