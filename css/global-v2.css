@@ -88,6 +88,8 @@ li{
 }
 .topbar a{
     color: var(--green-light);
+    font-weight: 400;
+    font-size: 30px;
 }
 .topbar ul{
     margin-left: 5em;
@@ -133,6 +135,7 @@ li{
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card > h3{
@@ -156,7 +159,7 @@ li{
     margin-bottom: 10;
     margin-left: 0px;
     border-radius: 20px;
-    box-shadow: -4px 4px 0px var(--green-dark);
+    box-shadow: -4px 4px 0px var(--purple);
     align-items: stretch;
 }
 
