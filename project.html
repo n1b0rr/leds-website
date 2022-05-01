@@ -13,6 +13,23 @@
             @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;500;600;700;800;900&display=swap');
         </style>
+        <script src="js/jquery.js"></script>
+        <script>
+
+            $(function (){  
+                red = ($("#red").val() / 100) * 255
+                green = ($("#green").val() / 100) * 255
+                blue = ($("#blue").val() / 100) * 255
+                $("body").css("background-color", `rgb(${red},${green},${blue})`);
+                $(".colorChanger").change(function(){
+                    //alert($("#red").val());
+                    red = ($("#red").val() / 100) * 255
+                    green = ($("#green").val() / 100) * 255
+                    blue = ($("#blue").val() / 100) * 255
+                    $("body").css("background-color", `rgb(${red},${green},${blue})`);
+                });
+            });
+        </script>
 
 
     </head>
@@ -37,6 +54,18 @@
                 <h2>
                     About my project
                 </h2>
+                <br />
+                <form>
+                    <label for="red">red</label>
+                    <input type="range" name="red" id="red" class="colorChanger"/>
+
+                    <label for="green">green</label>
+                    <input type="range" name="green" id="green" class="colorChanger" />
+
+                    <label for="blue">blue</label>
+                    <input type="range" name="blue" id="blue" class="colorChanger"/>
+                    
+                </form>
             </div>
             <div id="content">
                 <div>
