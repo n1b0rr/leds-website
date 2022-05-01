@@ -40,3 +40,60 @@
 #content div p{
     padding: 1vw;
 }
+#sliders{
+    flex-wrap: wrap;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.colorChanger{
+    -webkit-transform: rotate(-90deg);
+    margin-left: 50px;
+    margin-right: 50px;
+
+    -webkit-appearance: none;
+    appearance: none;
+    height: 12px;
+    background: var(--green-light);
+    outline: none;
+    opacity: 0.9; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+.colorChanger::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: var(--black);
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+#red{
+    background: rgb(255, 72, 72);
+}
+#green{
+    background: var(--green-light);
+}
+
+#blue{
+    background: rgb(85, 85, 255);
+}
+
+
+#labels{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100px;
+
+}
+#labels p{
+    padding-left: 92px;
+    padding-right: 92px;
+}

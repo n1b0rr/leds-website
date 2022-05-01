@@ -22,11 +22,23 @@
                 blue = ($("#blue").val() / 100) * 255
                 $("body").css("background-color", `rgb(${red},${green},${blue})`);
                 $(".colorChanger").change(function(){
-                    //alert($("#red").val());
+
                     red = ($("#red").val() / 100) * 255
                     green = ($("#green").val() / 100) * 255
                     blue = ($("#blue").val() / 100) * 255
                     $("body").css("background-color", `rgb(${red},${green},${blue})`);
+                    total = parseInt($("#red").val())+ parseInt($("#green").val())+parseInt($("#blue").val());
+                    console.log("red: " + $("#red").val() + "\ngreen: " + $("#green").val() + "\nblue: "+$("#blue").val() + "\ntotal: " + total);
+                    if(total<100){
+                        $("p").css("color","white");
+                        $("h3").css("color","white");
+
+                    }
+                    else{
+                        $("p").css("color","black");
+                        $("h3").css("color","black");
+                        
+                    }
                 });
             });
         </script>
@@ -56,15 +68,24 @@
                 </h2>
                 <br />
                 <form>
-                    <label for="red">red</label>
-                    <input type="range" name="red" id="red" class="colorChanger"/>
+                    <div id="sliders">
 
-                    <label for="green">green</label>
-                    <input type="range" name="green" id="green" class="colorChanger" />
+                            <input type="range" name="red" id="red" class="colorChanger" value="100"/>
 
-                    <label for="blue">blue</label>
-                    <input type="range" name="blue" id="blue" class="colorChanger"/>
-                    
+
+                            <input type="range" name="green" id="green" class="colorChanger"  value="100"/>
+
+
+
+                            <input type="range" name="blue" id="blue" class="colorChanger" value="100"/>
+
+                            <div id="labels">
+                                <div class="label"><p>red</p></div>
+                                <div class="label"><p>green</p></div>
+                                <div class="label"><p>blue</p></div>
+                            </div>
+
+                    </div>                
                 </form>
             </div>
             <div id="content">
