@@ -1,0 +1,46 @@
+form{
+    width: 400px;
+
+}
+form > input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card{
+    padding: 45px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: -4px 4px 0px var(--purple);
+
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10vh;
+
+    position: relative;
+    top: 10vh;
+
+}
+.wrapper{
+    height: 100vh;
+}
+#text-area{
+    height: 200px;
+    width: 400px;
+}
+
+#button{
+    color: var(--purple);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    font-size: 15px;
+
+}
+#button:hover{
+    background-color: var(--purple);
+    color: var(--white);
+    text-decoration: none;
+    padding: 5px;
+}

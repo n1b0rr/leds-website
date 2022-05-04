@@ -26,6 +26,8 @@
 
 #content img{
     width: 42vw;
+    min-width: 500px;
+    margin: 20px;
 }
 
 #content div{
