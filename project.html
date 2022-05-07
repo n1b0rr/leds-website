@@ -30,22 +30,53 @@
                     total = parseInt($("#red").val())+ parseInt($("#green").val())+parseInt($("#blue").val());
                     console.log("red: " + $("#red").val() + "\ngreen: " + $("#green").val() + "\nblue: "+$("#blue").val() + "\ntotal: " + total);
                     if(total<100){
-                        $("p").css("color","white");
+                        $("#content p").css("color","white");
+                        $("#top p").css("color","white");
                         $("h3").css("color","white");
 
                     }
                     else{
-                        $("p").css("color","black");
+                        $("#content p").css("color","black");
+                        $("#top p").css("color","black");
                         $("h3").css("color","black");
                         
                     }
                 });
+
+
             });
+            
+            var i = 0;
+                var running=false;
+                function startcycle()
+                {
+                    if(running){
+                        window.clearInterval(slideInterval);
+
+                        running=false;
+
+                    }
+                    else
+                    {
+                        slideInterval = window.setInterval(nextCycle, 7000);
+                     
+                        running=true;
+
+                    }
+
+                }
+                function nextCycle()
+                {
+                    i = (i+1) % 4;
+                    document.getElementById("slideshow").src = `pictures/picture${i+1}.jpg`;
+
+                }
+
         </script>
 
 
     </head>
-    <body>
+    <body onload="startcycle()">
         <div class="topbar">
             <object class="logo" data="pictures/logo.svg" type="image/svg+xml"></object>
             <ul>
@@ -87,6 +118,7 @@
 
                     </div>                
                 </form>
+                <img src="pictures/picture1.jpg" alt="pictures of project" title="pictures of project" id="slideshow"/>
             </div>
             <div id="content">
                 <div>
@@ -95,8 +127,8 @@
                     </h3>
                     <p>In this project i made an alarm clock, that uses a rgb led strip to wake you up. The alarm clock also lets you set the color of the strip and the intensity. The display i used to show the current time is a graphical display that uses spi as communication.</p>
                 </div>
-                <img src="pictures/pinkClouds.PNG" alt="picture of project" title="picture of project" />
-                <img src="pictures/pinkClouds.PNG" alt="picture of project" title="picture of project" />
+                <img src="pictures/picture2.jpg" alt="picture of project" title="picture of project" />
+                <img src="pictures/picture4.jpg" alt="picture of project" title="picture of project" />
                 <div>
                     <h3>
                         Why?
@@ -123,6 +155,9 @@
             <div id="footer-content">
                 <p>Author: Robin Schellemans</p>
                 <p><a href="mailto:r0879784@student.thomasmore.be">r0879784@student.thomasmore.be</a></p>
+                <p id="copyright">Copyright © Thomas More Mechelen-Antwerpen vzw - 
+                    Campus De Nayer - Professionele bachelor elektronica-ict - 
+                    2022</p>
             </div>
 
         </footer>

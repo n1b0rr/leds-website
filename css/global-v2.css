@@ -234,3 +234,10 @@ footer{
 }
   
 
+#copyright{
+    color: #F2F2F2;
+    float: right;
+    display: inline;
+    font-size: 15px;
+}
+
